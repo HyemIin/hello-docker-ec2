@@ -12,5 +12,6 @@ public class MainController {
     public String hello(Model model){
         model.addAttribute("data", "hello!!");
         return "hello";
+
     }
 }
