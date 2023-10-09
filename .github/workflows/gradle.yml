@@ -41,7 +41,6 @@ jobs:
         cache-read-only: ${{ github.ref != 'refs/heads/main' && github.ref != 'refs/heads/develop' }}
     
     - name: Upload Jacoco Report
-      if: ${{ failure() }} 
       uses: actions/upload-artifact@v3
       with:
         name: jacoco-report # 결과물의 이름
